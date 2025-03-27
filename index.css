@@ -1,0 +1,79 @@
+*
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Container to avoid content being hidden under navbar */
+.container {
+    padding-top: 80px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Styling for sections */
+.section {
+    margin-bottom: 40px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff6600;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .logo h2 {
+        font-size: 24px;
+    }
+}
